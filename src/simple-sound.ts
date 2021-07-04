@@ -7,7 +7,6 @@ export class SimpleSound {
         this.oscillator.type = 'square';
         this.oscillator.start();
         this.freq$.subscribe((freq: number) => {
-            console.log(freq)
             this.oscillator.frequency.setValueAtTime(freq, audioCtx.currentTime);
         });
         this.play$.subscribe((play: boolean) => {
