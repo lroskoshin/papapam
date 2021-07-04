@@ -1,4 +1,4 @@
-import { Observable, Subject } from "rxjs";
+import { Observable } from "rxjs";
 
 export class SimpleSound {
     private oscillator: OscillatorNode;
