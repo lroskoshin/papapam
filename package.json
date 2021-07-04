@@ -1,0 +1,30 @@
+{
+  "name": "papapam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lroskoshin/papapam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lroskoshin/papapam/issues"
+  },
+  "homepage": "https://github.com/lroskoshin/papapam#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "parcel": "^2.0.0-beta.3.1",
+    "postcss": "^8.3.5",
+    "postcss-nested": "^5.0.5"
+  },
+  "dependencies": {
+    "rxjs": "^7.1.0"
+  }
+}
