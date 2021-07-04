@@ -3,7 +3,7 @@ import { SimpleSound } from "./simple-sound";
 import { StringArea } from "./strings/string-area";
 import { stringsFactory } from "./strings/string-factory";
 
-const audioCtx =  new (window.AudioContext || (window as any).webkitAudioContext)();;
+const audioCtx: AudioContext =  new (window.AudioContext || (window as any).webkitAudioContext)();
 
 const strings = stringsFactory();
 strings.forEach((stringArea: StringArea, index: number) => {

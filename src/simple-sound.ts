@@ -19,6 +19,7 @@ export class SimpleSound {
     }
 
     public start(): void {
+        this.audioCtx.resume();
         this.oscillator.connect(this.audioCtx.destination)
     }
 
