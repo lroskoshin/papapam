@@ -33,8 +33,10 @@ export class StringArea {
         const mouseMove$ = fromEvent(this.element, 'mousemove') as Observable<MouseEvent>;
         const move$ = merge(
             touchMove$.pipe(
-                pluck('pageX')
-            ) as Observable<number>,
+                map((ev: TouchEvent) => {
+                    return ev.touches[0].clientX;
+                })
+            ),
             mouseMove$.pipe(
                 pluck('clientX')
             )
